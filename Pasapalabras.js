@@ -187,7 +187,7 @@ const name1 = [];
 const name2 = [];
 
 const askUserName1 = () => {
-  const askName1 = prompt(
+  let askName1 = prompt(
     "Bienvenido al PASAPALABRAS jugador => 1: introduzca su nombre"
   );
 
@@ -203,7 +203,7 @@ const askUserName1 = () => {
 };
 
 const askUserName2 = () => {
-  const askName2 = prompt(
+  let askName2 = prompt(
     "Bienvenido al PASAPALABRAS jugador => 2: introduzca su nombre"
   );
 
@@ -219,7 +219,7 @@ const askUserName2 = () => {
 };
 
 const pasapalabrasPlay = () => {
-  for (i = 0; i < questions.length; i++) {
+  for (let i = 0; i < questions.length; i++) {
     const answers = prompt(`${questions[i].question}`);
 
     if (answers.toLowerCase() === questions[i].answer.toLowerCase()) {
