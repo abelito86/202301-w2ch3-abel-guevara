@@ -1,0 +1,23 @@
+{
+  "name": "challenges-3-week2",
+  "version": "1.0.0",
+  "description": "Hola",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abelito86/202301-w2ch3-abel-guevara.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abelito86/202301-w2ch3-abel-guevara/issues"
+  },
+  "homepage": "https://github.com/abelito86/202301-w2ch3-abel-guevara#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
