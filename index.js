@@ -13,7 +13,7 @@ class Calculator {
     this.beforeValue = "";
     this.actualValue = "";
     this.operator = undefined;
-    this.result = this.result;
+    this.result = result;
   }
 
   addNumber(number) {
@@ -29,9 +29,7 @@ class Calculator {
 
   lastNumberEraser() {
     this.beforeValue = this.beforeValue.toString().slice(0, -1);
-
   }
-
 
   eraser() {
     this.beforeValue = "";
