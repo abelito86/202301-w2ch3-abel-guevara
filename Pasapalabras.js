@@ -233,10 +233,10 @@ const pasapalabrasPlay = () => {
       alert(`Se le volverá a preguntar al final del juego`);
 
       questions[i].status = 2;
-    } else if (answers.toLowerCase() === "end".toLowerCase()) {
-      alert(`Usted ha acertado ${scoreAccuratePlayer()} preguntas. Adios!`);
-      break;
-    } else if (answers === null) {
+    } else if (
+      answers.toLowerCase() === "end".toLowerCase() ||
+      answers === null
+    ) {
       alert(`Usted ha acertado ${scoreAccuratePlayer()} preguntas. Adios!`);
       break;
     } else {
@@ -249,7 +249,7 @@ const pasapalabrasPlay = () => {
 };
 
 const pasapalabraAnswer = () => {
-  for (i in questions) {
+  for (let i in questions) {
     if (questions[i].status === 2) {
       const answerAgain = prompt(`${questions[i].question}`);
 
